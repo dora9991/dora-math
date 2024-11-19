@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .game-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    border: 2px solid white;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .party, .command {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .battle {
+    text-align: center;
+  }
+  
+  .boss {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .message-box {
+    border: 2px solid white;
+    padding: 10px;
+    width: 80%;
+    box-sizing: border-box;
+  }
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Battle Game</title>
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        .container {
+            display: flex; /* フレックスボックスを使用して横並びにする */
+            justify-content: space-around; /* 要素の間隔を均等にする */
+            margin: 20px; /* コンテナの外側にマージンを追加 */
+        }
+        .log {
+            height: 150px; /* 最大高さを設定 */
+            overflow-y: auto; /* 縦方向のスクロールを有効に */
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .monsterImage{
+          height: 300px;
+        }
+        .party, .enemy{
+          display: flex; /* フレックスボックスを使用して横並びにする */
+            align-items: center; /* 縦方向の中央揃え */
+        }
+        .party p {
+            margin: 0 10px; /* 各要素の間にマージンを追加 */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="screen" id="screen"></div>
+    <div class="game" id="game">
+        <h1>数学バトル
+        </h1>
+        <div class="game-screen">
+            <div class="container">
+              <div class="party">
+                <p>勇者</p>
+                <p id="heroHP"></p>
+                <p>AT: 50</p>
+              </div>
+              <div class="enemy">
+                <p>ゾーマ</p>
+                <p id="monsterHP"></p>
+                <p>AT: 40</p>
+             </div>
+            </div>
+            <div class="monsterImage">
+              <img src="Zoma_02.jpg" alt="ボス" class="boss" id="monsterImage">
+            </div>
+          </div>
+        <div class="log">
+         <div id="battleLog"></div>
+         <div id="answers"></div>
+        <div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html> 
